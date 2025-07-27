@@ -14,6 +14,10 @@ import project_4 from "./images/project-4.jpg";
 import project_5 from "./images/project-5.jpg";
 import project_6 from "./images/project-6.jpg";
 
+// Review Ressources
+
+import people_1 from "./images/people-1.jpg";
+
 export {
   figma,
   nodeJs,
@@ -25,4 +29,5 @@ export {
   project_4,
   project_5,
   project_6,
+  people_1,
 };

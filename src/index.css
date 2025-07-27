@@ -37,7 +37,7 @@ body {
 }
 
 .headline_1 {
-  @apply text-5xl font-semibold leading-tight lg:text-[55px] lg:leading-[1.15];
+  @apply text-3xl font-semibold leading-tight lg:text-[50px] lg:leading-[1.15];
 }
 
 .headline_2 {
@@ -134,4 +134,26 @@ body {
 **/
 .cardSkill {
   @apply py-8 lg:py-4;
+}
+
+/* Label */
+
+.label {
+  @apply block text-zinc-200 text-sm font-normal mb-2;
+}
+
+.text-field {
+  @apply block outline-none w-full p-3 text-sm bg-zinc-800 rounded-sm ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400;
+}
+
+.text-field::placeholder {
+  @apply text-zinc-400;
+}
+
+/* .btn-primary.inputBtn {
+  @apply bg-red-200 w-full;
+} */
+
+.headline_2.ct {
+  @apply ml-0;
 }

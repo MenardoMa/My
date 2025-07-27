@@ -15,50 +15,39 @@ const flash = "->";
 const skillItem = [
   {
     imgSrc: figma,
-    label: "Figma",
+    label: "Html",
     desc: "Design tool",
     tag: "skill",
   },
   {
-    imgSrc: nodeJs,
+    imgSrc: css,
     label: "CSS",
-    desc: "User Interface",
+    desc: "Bootstrap, TailwindCss",
     tag: "skill",
   },
   {
-    imgSrc: css,
+    imgSrc: nodeJs,
     label: "JavaScript",
-    desc: "Interaction",
+    desc: "Stack Mern, React.Js Next.JS Node.Js et Express",
     tag: "skill",
   },
-  {
-    imgSrc: figma,
-    label: "NodeJS",
-    desc: "Web Server",
-    tag: "skill",
-  },
-  {
-    imgSrc: nodeJs,
-    label: "figmaJS",
-    desc: "Node Framework",
-    tag: "skill",
-  },
+
   {
     imgSrc: css,
-    label: "MongoDB",
-    desc: "Database",
-    tag: "skill",
-  },
-  {
-    imgSrc: figma,
-    label: "React",
-    desc: "Framework",
+    label: "Database",
+    desc: "Sql, Mysql, Postgrel, MongoBD",
     tag: "skill",
   },
   {
     imgSrc: nodeJs,
-    label: "TailwindCSS",
-    desc: "User Interface",
+    label: "Design",
+    desc: "Figma, Photoshop",
+    tag: "skill",
+  },
+  {
+    imgSrc: figma,
+    label: "PHP",
+    desc: "Laravel",
     tag: "skill",
   },
 ];
@@ -74,7 +63,7 @@ const skillWork = [
   {
     imgSrc: nodeJs,
     label: "Optisme tech",
-    desc: "Front-end web Développeur",
+    desc: "Front-end web développeur",
     tag: "skillWork",
     yeah: "2022 - 2023",
   },
@@ -123,6 +112,23 @@ const Skill = () => {
     <section className="section">
       <div className="container grid gap-2 lg:grid-cols-2 lg:gap-10">
         <div className="">
+          <h2 className="headline_2">
+            outils essentiels que j'utilise
+            <span className="ml-1">{flash}</span>
+          </h2>
+          <div className="cardSkill grid gap-3">
+            {skillItem.map(({ label, desc, imgSrc, tag }, key) => (
+              <SkillCard
+                key={key}
+                label={label}
+                desc={desc}
+                tag={tag}
+                imgSrc={imgSrc}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="">
           <div className="">
             <h2 className="headline_2">
               Parcours professionnel <span className="ml-1">{flash}</span>
@@ -156,23 +162,6 @@ const Skill = () => {
                 />
               ))}
             </div>
-          </div>
-        </div>
-        <div className="">
-          <h2 className="headline_2">
-            outils essentiels que j'utilise{" "}
-            <span className="ml-1">{flash}</span>
-          </h2>
-          <div className="cardSkill grid gap-3">
-            {skillItem.map(({ label, desc, imgSrc, tag }, key) => (
-              <SkillCard
-                key={key}
-                label={label}
-                desc={desc}
-                tag={tag}
-                imgSrc={imgSrc}
-              />
-            ))}
           </div>
         </div>
       </div>

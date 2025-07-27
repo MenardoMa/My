@@ -66,7 +66,7 @@ const Work = () => {
     <section id="work" className="section">
       <div className="container">
         <h2 className="headline_2 ml-0 mb-8">Work</h2>
-        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(400px,1fr))]">
+        <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))] md:grid-cols-2 ">
           {works.map(({ imgSrc, title, tags, projectLink }, key) => (
             <ProjectCard
               key={key}
@@ -78,7 +78,7 @@ const Work = () => {
             />
           ))}
         </div>
-        <div className="w-full flex items-center justify-center py-8">
+        <div className="relative w-full flex items-end justify-center h-25">
           <ButtonOutline
             label="voir la liste complete"
             icon="->"
