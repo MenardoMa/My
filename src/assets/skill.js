@@ -4,6 +4,12 @@ import figma from "./images/figma.svg";
 import nodeJs from "./images/nodejs.svg";
 import css from "./images/css3.svg";
 import certificat from "./images/Whitecertificate.svg";
+import html from "./images/icons8-html5.svg";
+import database from "./images/icons8-database-40.png";
+import design from "./images/icons8-design-40.png";
+import php from "./images/php.webp";
+import darketing from "./images/Darkting.jpg";
+import optimist from "./images/Optimist.jpg";
 
 // Projects Ressources
 
@@ -22,6 +28,12 @@ export {
   figma,
   nodeJs,
   css,
+  html,
+  database,
+  design,
+  php,
+  darketing,
+  optimist,
   certificat,
   project_1,
   project_2,

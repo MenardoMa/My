@@ -1,4 +1,6 @@
 import heroBanner from "../assets/images/hero-banner.png";
+import My from "../assets/images/My.jpg";
+import doc from "../../public/doc/CV_2025_Menardo_MADIUMBA_Mayimona.pdf";
 import { ButtonPrymary, ButtonOutline } from "./Button";
 
 const Hero = () => {
@@ -7,15 +9,6 @@ const Hero = () => {
       <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
         <div>
           <div className="flex items-center gap-3">
-            {/* <figure>
-              <img
-                src="./"
-                alt="Menardo Madiumba"
-                width={40}
-                height={40}
-                className="image-cover"
-              />
-            </figure> */}
             <div className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide">
               <span className="relative h-2 w-2 rounded-full bg-emerald-400">
                 <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
@@ -27,24 +20,33 @@ const Hero = () => {
             Building Scalable Modern Websites for the future.
           </h2>
           <div className="flex items-center gap-3">
-            <ButtonPrymary href="#" label="Telecharger cv" icon="->" />
+            <ButtonPrymary
+              href={doc}
+              target="_blank"
+              label="Telecharger cv"
+              icon="->"
+            />
             <ButtonOutline
-              href="#contact"
+              href="mailto:menardotera@gmail.com"
               label="Travailler avec moi"
               icon="->"
             />
           </div>
         </div>
-        <div className="hidden lg:block">
-          <figure className="w-full max-w-[480px] ml-auto overflow-hidden">
-            <img
-              src={heroBanner}
-              alt="Menardo | Madiumba"
-              className="w-full"
-              width={200}
-              height={200}
-            />
-          </figure>
+        <div className="hidden lg:block borde">
+          <div className="overflow-hidden h-[500px] flex items-center justify-end">
+            <div className="overflow-hidden w-[300px] h-[300px] bg-zinc-50/10 ring-inset ring-1 ring-zinc-50/5 transition-[opacity,transform,filter] backdrop-blur-2xl rounded-2xl">
+              <figure className="w-full max-w-[480px] ml-auto overflow-hidden">
+                <img
+                  src={heroBanner}
+                  alt="Menardo | Madiumba"
+                  className="w-full"
+                  width={200}
+                  height={200}
+                />
+              </figure>
+            </div>
+          </div>
         </div>
       </div>
     </section>

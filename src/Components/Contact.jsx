@@ -6,7 +6,7 @@
 
 const socialLinks = [
   {
-    href: "https://www.linkedin.com/in/codewithsadee",
+    href: "https://www.linkedin.com/in/me",
     icon: (
       <svg
         width="24"
@@ -24,7 +24,7 @@ const socialLinks = [
     alt: "LinkedIn",
   },
   {
-    href: "https://x.com/codewithsadee_",
+    href: "https://x.com/",
     icon: (
       <svg
         width="24"
@@ -42,7 +42,7 @@ const socialLinks = [
     alt: "Twitter X",
   },
   {
-    href: "https://www.instagram.com/codewithsadee",
+    href: "https://www.instagram.com/Menardo",
     icon: (
       <svg
         width="25"
@@ -60,7 +60,7 @@ const socialLinks = [
     alt: "Instagram",
   },
   {
-    href: "https://www.github.com/codewithsadee-org",
+    href: "https://www.github.com/MenardoMa",
     icon: (
       <svg
         width="24"
@@ -94,7 +94,7 @@ const Contact = () => {
             Contact moi pour une collaboration
           </h2>
           <p className="mt-3 mb-8 text-zinc-400 max-w-[50ch] lg:max-w-[35ch]">
-            Contactez-nous dès aujourd'hui pour discuter des besoins de votre
+            Contact moi dès aujourd'hui pour discuter des besoins de votre
             projet et commencer à collaborer sur quelque chose d'extraordinaire.
           </p>
           <div className="flex items-center gap-2 mt-auto">
@@ -157,10 +157,7 @@ const Contact = () => {
               className="text-field resize-y min-h-20 max-h-50"
             ></textarea>
           </div>
-          <button
-            type="submit"
-            className="btn btn-primary [&]:max-w-full w-full cursor-pointer"
-          >
+          <button type="submit" className="btn send cursor-pointer mt-4">
             Envoyer
           </button>
         </form>

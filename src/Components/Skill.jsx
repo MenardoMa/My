@@ -5,7 +5,18 @@
  */
 import { SkillCard, SkillWork, SkillScholl } from "./SkillCard/SkillCard";
 
-import { figma, nodeJs, css, certificat } from "../assets/skill";
+import {
+  html,
+  figma,
+  nodeJs,
+  css,
+  database,
+  design,
+  certificat,
+  php,
+  darketing,
+  optimist,
+} from "../assets/skill";
 
 const flash = "->";
 
@@ -14,62 +25,65 @@ const flash = "->";
  */
 const skillItem = [
   {
-    imgSrc: figma,
+    imgSrc: html,
     label: "Html",
-    desc: "Design tool",
+    desc: "Structure",
     tag: "skill",
   },
   {
     imgSrc: css,
     label: "CSS",
-    desc: "Bootstrap, TailwindCss",
+    desc: "Bootstrap TailwindCss",
     tag: "skill",
   },
   {
     imgSrc: nodeJs,
     label: "JavaScript",
-    desc: "Stack Mern, React.Js Next.JS Node.Js et Express",
+    desc: "Stack Mern, ReactJs NextJS NodesJs et Express",
     tag: "skill",
   },
 
   {
-    imgSrc: css,
+    imgSrc: database,
     label: "Database",
-    desc: "Sql, Mysql, Postgrel, MongoBD",
+    desc: "Mysql Postgrel MongoBD Firebase",
     tag: "skill",
   },
   {
-    imgSrc: nodeJs,
-    label: "Design",
-    desc: "Figma, Photoshop",
+    imgSrc: php,
+    label: "PHP",
+    desc: "POO Laravel",
     tag: "skill",
   },
   {
     imgSrc: figma,
-    label: "PHP",
-    desc: "Laravel",
+    label: "Design",
+    desc: "Figma Photoshop",
     tag: "skill",
   },
 ];
 
 const skillWork = [
   {
-    imgSrc: figma,
+    imgSrc: darketing,
     label: "Darketing",
+    href: "Darketing.com",
     desc: "Fullstack web développeur",
     tag: "skillWork",
     yeah: "2020 - 2021",
   },
   {
-    imgSrc: nodeJs,
-    label: "Optisme tech",
+    imgSrc: optimist,
+    label: "Optimist technologies",
+    href: "",
     desc: "Front-end web développeur",
     tag: "skillWork",
     yeah: "2022 - 2023",
   },
   {
-    imgSrc: css,
+    imgSrc: design,
     label: "Mosala digital",
+    href: "",
     desc: "Fullstack web développeur",
     tag: "skillWork",
     yeah: "2024 - 2025",
@@ -134,16 +148,19 @@ const Skill = () => {
               Parcours professionnel <span className="ml-1">{flash}</span>
             </h2>
             <div className="cardSkill grid gap-3">
-              {skillWork.map(({ label, desc, imgSrc, tag, yeah }, key) => (
-                <SkillWork
-                  key={key}
-                  label={label}
-                  desc={desc}
-                  tag={tag}
-                  imgSrc={imgSrc}
-                  yeah={yeah}
-                />
-              ))}
+              {skillWork.map(
+                ({ label, href, desc, imgSrc, tag, yeah }, key) => (
+                  <SkillWork
+                    key={key}
+                    href={href}
+                    label={label}
+                    desc={desc}
+                    tag={tag}
+                    imgSrc={imgSrc}
+                    yeah={yeah}
+                  />
+                )
+              )}
             </div>
           </div>
           <div>

@@ -1,4 +1,4 @@
-import { ButtonPrymary } from "./Button";
+import { ButtonOutline } from "./Button";
 
 /**
  *
@@ -31,19 +31,19 @@ const sitemap = [
 const socials = [
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/codewithsadee",
+    href: "https://www.linkedin.com/in/me",
   },
   {
     label: "Twitter X",
-    href: "https://x.com/codewithsadee_",
+    href: "https://x.com/",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/codewithsadee",
+    href: "https://www.instagram.com/",
   },
   {
     label: "GitHub",
-    href: "https://www.github.com/codewithsadee-org",
+    href: "https://www.github.com/MenardoMa",
   },
   {
     label: "+243 812799057",
@@ -65,7 +65,7 @@ const Footer = () => {
             <h1 className="headline_1 mb-8 lg:max-w-[12ch]">
               Démarrons votre projet ensemble
             </h1>
-            <ButtonPrymary
+            <ButtonOutline
               href="mailto:menardotera@gmail.com"
               label="Démarré un project"
               icon="->"
