@@ -18,7 +18,7 @@ const ProjectCard = ({ imgSrc, title, tags, projectLink, classes }) => {
             {tags.map((label, key) => (
               <span
                 key={key}
-                className="h-8 text-zinc-400 text-sm bg-zinc-50/5 grid items-center px-3 rounded-lg"
+                className="h-7 text-zinc-400 text-sm bg-zinc-50/5 grid items-center px-3 rounded-xl"
               >
                 {label}
               </span>

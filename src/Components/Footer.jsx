@@ -67,7 +67,7 @@ const Footer = () => {
             </h1>
             <ButtonOutline
               href="mailto:menardotera@gmail.com"
-              label="Démarré un project"
+              label="Démarrer un project"
               icon="->"
             />
           </div>

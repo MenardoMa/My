@@ -26,7 +26,7 @@ const flash = "->";
 const skillItem = [
   {
     imgSrc: html,
-    label: "Html",
+    label: "HTML",
     desc: "Structure",
     tag: "skill",
   },

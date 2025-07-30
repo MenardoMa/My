@@ -1,20 +1,22 @@
 import PredirectionCard from "./PredirectionCard/PredirectionCard";
 
+import { integration, refonte, audit } from "../assets/skill";
+
 const PredirectionResources = [
   {
-    imgSrc: "",
+    imgSrc: integration,
     title: "Intégration",
     desc: "Je peux m'intégrer de manière transparente à votre équipe de développement, de produits et apporter des solutions à vos défis de conception et ou dévoloppement.",
     tags: "Recommandé pour les créateurs indépendants",
   },
   {
-    imgSrc: "",
+    imgSrc: refonte,
     title: "Refonte du produit",
     desc: "Nous travaillerons ensemble à la refonte de votre produit grâce à une approche centrée sur l'utilisateur qui améliorera l'engagement, la fidélisation et les revenus. Dites adieu à une expérience utilisateur médiocre et bonjour à un produit qui se démarque sur le marché.",
     tags: "",
   },
   {
-    imgSrc: "",
+    imgSrc: audit,
     title: "Audit UX",
     desc: "Je peux vous aider à repérer les goulots d'étranglement de votre produit pour libérer son plein potentiel.",
     tags: "Recommandé pour les créateurs indépendants",

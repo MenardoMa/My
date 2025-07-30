@@ -6,8 +6,8 @@ const PredirectionCard = ({ imgSrc, title, desc, tags }) => {
           <img
             src={imgSrc}
             alt="Predirection"
-            width={28}
-            height={28}
+            width={38}
+            height={38}
             loading="lazy"
             className=""
           />

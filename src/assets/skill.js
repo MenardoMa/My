@@ -24,6 +24,12 @@ import project_6 from "./images/project-6.jpg";
 
 import people_1 from "./images/people-1.jpg";
 
+// Predirection Ressources
+
+import integration from "./images/equipe_2.png";
+import audit from "./images/audit.png";
+import refonte from "./images/refonte_1.png";
+
 export {
   figma,
   nodeJs,
@@ -32,6 +38,9 @@ export {
   database,
   design,
   php,
+  integration,
+  audit,
+  refonte,
   darketing,
   optimist,
   certificat,

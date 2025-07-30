@@ -32,21 +32,21 @@ const reviews = [
   },
   {
     content:
-      "Creative and skilled! Produced a modern, user-friendly site that exceeded expectations. Great communication.",
+      "Nous avons eu le plaisir de collaborer avec Menardo pour le développement de notre application web. Dès le début, il a démontré une compréhension approfondie de nos besoins et a su proposer des solutions adaptées.",
     name: "Noah Williams",
     imgSrc: project_1,
     company: "BrightWeb",
   },
   {
     content:
-      "Professional work! Delivered on time, with a polished design and smooth user experience. Top-notch developer.",
+      "Son expertise en technologies front-end et back-end a été déterminante dans la création d'une plateforme à la fois intuitive et performante. Il a respecté les délais tout en garantissant une qualité de code exceptionnelle.",
     name: "Ava Thompson",
     imgSrc: project_1,
     company: "TechMosaic",
   },
   {
     content:
-      "Excellent project execution! High-quality code, responsive design, and exceptional problem-solving skills.",
+      "Nous recommandons vivement Menardo à toute entreprise à la recherche d'un développeur web full stack talentueux et fiable.",
     name: "Jonathan",
     imgSrc: project_1,
     company: "Skyline Digital",
