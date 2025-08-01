@@ -65,7 +65,7 @@ const Work = () => {
   return (
     <section id="work" className="section">
       <div className="container">
-        <h2 className="headline_2 ml-0 mb-8">Work</h2>
+        <h2 className="headline_2 ml-0 mb-8 up-reveal">Mes projets</h2>
         <div className="grid gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,minmax(280px,1fr))] md:grid-cols-2 ">
           {works.map(({ imgSrc, title, tags, projectLink }, key) => (
             <ProjectCard
@@ -74,15 +74,15 @@ const Work = () => {
               title={title}
               tags={tags}
               projectLink={projectLink}
-              classes=""
+              classes="up-reveal"
             />
           ))}
         </div>
         <div className="relative w-full flex items-end justify-center h-25">
           <ButtonOutline
-            label="voir la liste complete"
+            label="Voir la liste complète"
             icon="->"
-            classes="text-zinc-300"
+            classes="text-zinc-300 up-reveal"
             href="#all"
           />
         </div>

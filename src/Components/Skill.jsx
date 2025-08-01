@@ -93,21 +93,21 @@ const skillWork = [
 const skillSchool = [
   {
     imgSrc: certificat,
-    label: "Certificat de compétences en bureautique",
+    label: "Certificat de compétence en bureautique",
     desc: "Cecontec Kinshasa",
     tag: "skillWork",
     yeah: "2016 - 2017",
   },
   {
     imgSrc: certificat,
-    label: "Diplôme d'Etat en Mécanique-général",
-    desc: "institut technique professionnel passio (ITPP)",
+    label: "Diplôme d'Etat en Mécanique-générale",
+    desc: "institut technique professionnel Passio (ITPP)",
     tag: "skillWork",
     yeah: "2012 - 2018",
   },
   {
     imgSrc: certificat,
-    label: "Graduat en Sciences informatique",
+    label: "Baccalauréat en Sciences informatiques",
     desc: "Université de Kinshasa (UNIKIN)",
     tag: "skillWork",
     yeah: "2018 - 2021",
@@ -126,7 +126,7 @@ const Skill = () => {
     <section className="section">
       <div className="container grid gap-2 lg:grid-cols-2 lg:gap-10">
         <div className="">
-          <h2 className="headline_2">
+          <h2 className="headline_2 up-reveal">
             outils essentiels que j'utilise
             <span className="ml-1">{flash}</span>
           </h2>
@@ -138,13 +138,14 @@ const Skill = () => {
                 desc={desc}
                 tag={tag}
                 imgSrc={imgSrc}
+                classes="up-reveal"
               />
             ))}
           </div>
         </div>
         <div className="">
           <div className="">
-            <h2 className="headline_2">
+            <h2 className="headline_2 up-reveal">
               Parcours professionnel <span className="ml-1">{flash}</span>
             </h2>
             <div className="cardSkill grid gap-3">
@@ -158,13 +159,14 @@ const Skill = () => {
                     tag={tag}
                     imgSrc={imgSrc}
                     yeah={yeah}
+                    classes="up-reveal"
                   />
                 )
               )}
             </div>
           </div>
           <div>
-            <h2 className="headline_2">
+            <h2 className="headline_2 up-reveal">
               diplômes et formations <span className="ml-1">{flash}</span>
             </h2>
             <div className="cardSkill grid gap-3">
@@ -176,6 +178,7 @@ const Skill = () => {
                   tag={tag}
                   imgSrc={imgSrc}
                   yeah={yeah}
+                  classes="up-reveal"
                 />
               ))}
             </div>

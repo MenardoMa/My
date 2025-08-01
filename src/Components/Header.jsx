@@ -12,7 +12,8 @@ import Navbar from "./Navbar";
  *
  */
 
-import logo from "../assets/images/logo.svg";
+// import logo from "../assets/images/logo.svg";
+import { code } from "../assets/skill";
 
 /**
  *
@@ -30,7 +31,7 @@ const Header = () => {
       <div className="max-w-screen-xl w-full mx-auto px-4 flex items-center justify-between md:px-6 md:grid md:grid-cols-[1fr_3fr_1fr]">
         <h1>
           <a href="" className="logo">
-            <img src={logo} alt="Menardo | Portfolio" width={40} height={40} />
+            <img src={code} alt="Menardo | Portfolio" width={30} height={30} />
           </a>
         </h1>
         <div className="relative md:justify-self-center">

@@ -1,6 +1,8 @@
-const SkillCard = ({ label, desc, imgSrc, tag }) => {
+const SkillCard = ({ label, desc, imgSrc, tag, classes }) => {
   return (
-    <div className="flex items-center p-3 gap-4 cursor-pointe hover:bg-zinc-800 active:bg-zinc-700 cursor-pointer hover:ring hover:ring-inset hover:ring-zinc-50/10 transition-colors rounded-xl group">
+    <div
+      className={`flex items-center p-3 gap-4 cursor-pointe hover:bg-zinc-800 active:bg-zinc-700 cursor-pointer hover:ring hover:ring-inset hover:ring-zinc-50/10 transition-colors rounded-xl group ${classes}`}
+    >
       <figure className="overflow-hidden bg-zinc-700/50 relative h-10 w-10 flex items-center justify-center text-center rounded-md group-hover:bg-zinc-900">
         <img src={imgSrc} alt={tag} width={24} height={24} />
       </figure>
@@ -12,9 +14,11 @@ const SkillCard = ({ label, desc, imgSrc, tag }) => {
   );
 };
 
-const SkillWork = ({ label, href, desc, imgSrc, tag, yeah }) => {
+const SkillWork = ({ label, href, desc, imgSrc, tag, yeah, classes }) => {
   return (
-    <div className="w-full flex items-center p-3 gap-4 cursor-pointe hover:bg-zinc-800 active:bg-zinc-700 cursor-pointer hover:ring hover:ring-inset hover:ring-zinc-50/10 transition-colors rounded-xl group">
+    <div
+      className={`w-full flex items-center p-3 gap-4 cursor-pointe hover:bg-zinc-800 active:bg-zinc-700 cursor-pointer hover:ring hover:ring-inset hover:ring-zinc-50/10 transition-colors rounded-xl group ${classes}`}
+    >
       <figure className="overflow-hidden bg-zinc-700/50 relative h-10 w-10 flex items-center justify-center text-center rounded-md group-hover:bg-zinc-900">
         <img src={imgSrc} alt={tag} width={24} height={24} />
       </figure>
@@ -35,9 +39,11 @@ const SkillWork = ({ label, href, desc, imgSrc, tag, yeah }) => {
   );
 };
 
-const SkillScholl = ({ label, desc, imgSrc, tag, yeah }) => {
+const SkillScholl = ({ label, desc, imgSrc, tag, yeah, classes }) => {
   return (
-    <div className="w-full flex items-center p-3 gap-4 cursor-pointe hover:bg-zinc-800 active:bg-zinc-700 cursor-pointer hover:ring hover:ring-inset hover:ring-zinc-50/10 transition-colors rounded-xl group">
+    <div
+      className={`w-full flex items-center p-3 gap-4 cursor-pointe hover:bg-zinc-800 active:bg-zinc-700 cursor-pointer hover:ring hover:ring-inset hover:ring-zinc-50/10 transition-colors rounded-xl group ${classes}`}
+    >
       <figure className="overflow-hidden bg-zinc-700/50 relative h-10 w-10 flex items-center justify-center text-center rounded-md group-hover:bg-zinc-900">
         <img src={imgSrc} alt={tag} width={24} height={24} />
       </figure>

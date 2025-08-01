@@ -1,3 +1,7 @@
+// All Ressources
+
+import code from "./images/code.png";
+
 // Skill Ressources
 
 import figma from "./images/figma.svg";
@@ -31,6 +35,7 @@ import audit from "./images/audit.png";
 import refonte from "./images/refonte_1.png";
 
 export {
+  code,
   figma,
   nodeJs,
   css,

@@ -1,4 +1,14 @@
 /**
+ * Modules
+ */
+
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+/**
  *
  * Reviews Ressources
  *
@@ -60,17 +70,29 @@ const reviews = [
  */
 
 const Review = () => {
+  useGSAP(() => {
+    gsap.to(".scrub-slide", {
+      scrollTrigger: {
+        trigger: ".scrub-slide",
+        start: "-200% 80%",
+        end: "400% 80%",
+        scrub: true,
+      },
+      x: "-1000",
+    });
+  });
+
   return (
     <section id="reviews" className="section overflow-hidden">
       <div className="container">
-        <h2 className="headline_2 mb-4">Temoignages de clients</h2>
-        <div className="mb-8 max-w-xl pl-4">
-          <p className="text-zinc-200">
+        <h2 className="headline_2 mb-5 up-reveal">Temoignages de clients</h2>
+        <div className="mb-10 max-w-xl pl-4">
+          <p className="text-zinc-200 up-reveal">
             Voici ce que les personnes avec lesquelles je me suis associé disent
             de notre collaboration.
           </p>
         </div>
-        <div className="flex items-stretch gap-3 w-fit">
+        <div className="scrub-slide flex items-stretch gap-3 w-fit">
           {reviews.map(({ content, name, imgSrc, company }, key) => (
             <ReviewCard
               key={key}

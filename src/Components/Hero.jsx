@@ -23,7 +23,7 @@ const Hero = () => {
             <ButtonPrymary
               href={doc}
               target="_blank"
-              label="Telecharger mon cv"
+              label="Télecharger mon CV"
             />
             <ButtonOutline
               href="mailto:menardotera@gmail.com"

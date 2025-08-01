@@ -6,7 +6,7 @@ const PredirectionResources = [
   {
     imgSrc: integration,
     title: "Intégration",
-    desc: "Je peux m'intégrer de manière transparente à votre équipe de développement, de produits et apporter des solutions à vos défis de conception et ou dévoloppement.",
+    desc: "Je peux m'intégrer de manière transparente à votre équipe de développement et apporter des solutions à vos défis de conception et ou de dévoloppement.",
     tags: "Recommandé pour les créateurs indépendants",
   },
   {
@@ -34,12 +34,12 @@ const Predirection = () => {
       <div className="container ">
         <div className="flex flex-col items-center gap-5">
           <div className="mb-10 max-w-2xl">
-            <h2 className="headline_2 mb-5 predirection">
-              Comment puis-je t'aider
+            <h2 className="headline_2 mb-5 predirection up-reveal">
+              Comment puis-je t'aider ?
             </h2>
-            <p className="text-2xl leading-relaxed text-zinc-300">
+            <p className="text-2xl leading-relaxed text-zinc-300 up-reveal">
               Je suis embauché pour concevoir, réparer ou faire évoluer des
-              produit, application web.
+              produits, applications web.
             </p>
           </div>
           {PredirectionResources.map(({ imgSrc, title, desc, tags }, key) => (
@@ -49,6 +49,7 @@ const Predirection = () => {
               title={title}
               desc={desc}
               tags={tags}
+              classes="up-reveal"
             />
           ))}
         </div>

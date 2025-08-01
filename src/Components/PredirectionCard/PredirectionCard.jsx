@@ -1,6 +1,8 @@
-const PredirectionCard = ({ imgSrc, title, desc, tags }) => {
+const PredirectionCard = ({ imgSrc, title, desc, tags, classes }) => {
   return (
-    <div className="relative p-8 rounded-xl max-w-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-[background-colors]">
+    <div
+      className={`relative p-8 rounded-xl max-w-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-[background-colors] ${classes}`}
+    >
       <div className="">
         <figure className="overflow-hidden bg-zinc-700/50 relative h-15 w-15 flex items-center justify-center text-center rounded-md">
           <img
